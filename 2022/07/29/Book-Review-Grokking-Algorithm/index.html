@@ -130,12 +130,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -218,31 +218,41 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>昨天看完了《图解算法》一书。算起来，这本书断断续续读了几个月了，不是因为这本书很难理解，恰恰相反，是因为这本书的内容很简单很基础，以至于读了一章之后很久才想起来还有这样一本书的存在，又继续开始读。前一段时间和木木一起断断续续刷leetcode的题，对于基本的数据结构，dfs和bfs有了比较清晰的认识和理解，还了解了动态规划，贪心算法的思想，这些内容占了这本书的一大部分篇幅。对于我这种半路出家的AI学徒来说，理解这本书也不难，可见这本书真的是非常适合新手阅读的基础书。即便如此，我还是能从这本书当中学习到很多非常细节的知识。比如：</p>
-<ol>
+<ol type="1">
 <li>递归只是让解决方法更容易理解，但并没有性能上的提升，而且每次调用递归函数也会耗内存，所以之前和木木刷dfs题目的时候，木木推荐优先使用stack和while循环来解决，而不是首先就用递归。</li>
 <li>解决两点之间最短路径的方法：bfs，仅当边无权重时适用</li>
-<li>狄克斯特拉算法（Dijkstra’s Algorithm）的使用条件：<ol>
+<li>狄克斯特拉算法（Dijkstra's Algorithm）的使用条件：
+<ol type="1">
 <li>有向无环图（directed acyclic graph, DAG）</li>
 <li>边的权重为非负</li>
-</ol>
-</li>
+</ol></li>
 <li>Dijkstra算法的python实现中，需要用到多少个散列表，分别存储哪些信息？</li>
-<li>动态规划和贪心算法的区别：<ol>
+<li>动态规划和贪心算法的区别：
+<ol type="1">
 <li>贪心算法：每一步都取局部最优，最后期望的出一个全局最优解，但最后的结果并不总是全局最优。</li>
 <li>动态规划：最后的一定是全局最优解</li>
-</ol>
-</li>
+</ol></li>
 </ol>
 <p>个人感觉是，这本书对于新手来讲还是值得一读的，因为读的过程中会比较有成就感，因为书中的内容基本看一遍都能懂，不需要反复推敲。不过也是因为过于基础和简单，因此不值得反复拿出来翻看。除了要手写dijkstra算法时可能得回顾一下这本书的代码部分，我应该不会翻看这本书了。</p>
-<p>Yesterday, I finnally finished reading a very interesting book <strong>Grokking Algorithms</strong>. It is a very basic introduction book for beginners to get the basic ideas about algorithms. Since I have some basic knowledge about data structures, sorting algorithms, DFS and BFS, it is an easy task for me to understand the book. Although it is very easy to understand, there are still some take home messages.</p>
-<ol>
-<li>Recursion is much readable but it doesn’t improve the performance.</li>
+<p>Yesterday, I finnally finished reading a very interesting book
+<strong>Grokking Algorithms</strong>. It is a very basic introduction
+book for beginners to get the basic ideas about algorithms. Since I have
+some basic knowledge about data structures, sorting algorithms, DFS and
+BFS, it is an easy task for me to understand the book. Although it is
+very easy to understand, there are still some take home messages.</p>
+<ol type="1">
+<li>Recursion is much readable but it doesn't improve the
+performance.</li>
 <li>The shortest path between two nodes in unweighted graphs: BSF</li>
-<li>The shortest path between two nodes in directed acyclic graphs: Dijkstra’s Algorighm</li>
-<li>How to implement Dijkstra’s Algorighm in python?</li>
+<li>The shortest path between two nodes in directed acyclic graphs:
+Dijkstra's Algorighm</li>
+<li>How to implement Dijkstra's Algorighm in python?</li>
 <li>The difference between Dynamic Programming and Greedy?</li>
 </ol>
-<p><img src="/images/grokking_algorithms.PNG" alt="grokking-algorithms"></p>
+<figure>
+<img src="/images/grokking_algorithms.PNG" alt="grokking-algorithms" />
+<figcaption aria-hidden="true">grokking-algorithms</figcaption>
+</figure>
 
     </div>
 
@@ -316,7 +326,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","mhchem":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","mhchem":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
