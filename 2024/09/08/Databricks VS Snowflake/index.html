@@ -20,30 +20,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"sherry-pan.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"style":null,"show_result":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="昨天看完了《图解算法》一书。算起来，这本书断断续续读了几个月了，不是因为这本书很难理解，恰恰相反，是因为这本书的内容很简单很基础，以至于读了一章之后很久才想起来还有这样一本书的存在，又继续开始读。前一段时间和木木一起断断续续刷leetcode的题，对于基本的数据结构，dfs和bfs有了比较清晰的认识和理解，还了解了动态规划，贪心算法的思想，这些内容占了这本书的一大部分篇幅。对于我这种半路出家的AI">
+    <meta name="description" content="前言 前段时间参加了Databricks公司的In-house Day，发现这是一家很厉害的数据平台公司。联想到之前听过的Snowflake，一时很好奇这两个公司的产品之间的区别。Databricks vs Snowflake – 2024 take 这一篇文章很好地总结了两者之间的区别，在阅读这一篇文章时遇到了一些以前没能弄清楚的概念，产生了一些碎碎念感想，遂写下这篇博客记录之。 A few w">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Book Review: Grokking Algorithms">
-<meta property="og:url" content="https://sherry-pan.github.io/2022/07/29/Book-Review-Grokking-Algorithm/index.html">
+<meta property="og:title" content="DataBricks VS Snowflake">
+<meta property="og:url" content="https://sherry-pan.github.io/2024/09/08/Databricks%20VS%20Snowflake/index.html">
 <meta property="og:site_name" content="Sherry&#39;s blog">
-<meta property="og:description" content="昨天看完了《图解算法》一书。算起来，这本书断断续续读了几个月了，不是因为这本书很难理解，恰恰相反，是因为这本书的内容很简单很基础，以至于读了一章之后很久才想起来还有这样一本书的存在，又继续开始读。前一段时间和木木一起断断续续刷leetcode的题，对于基本的数据结构，dfs和bfs有了比较清晰的认识和理解，还了解了动态规划，贪心算法的思想，这些内容占了这本书的一大部分篇幅。对于我这种半路出家的AI">
+<meta property="og:description" content="前言 前段时间参加了Databricks公司的In-house Day，发现这是一家很厉害的数据平台公司。联想到之前听过的Snowflake，一时很好奇这两个公司的产品之间的区别。Databricks vs Snowflake – 2024 take 这一篇文章很好地总结了两者之间的区别，在阅读这一篇文章时遇到了一些以前没能弄清楚的概念，产生了一些碎碎念感想，遂写下这篇博客记录之。 A few w">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://sherry-pan.github.io/images/grokking_algorithms.PNG">
-<meta property="article:published_time" content="2022-07-29T17:03:46.000Z">
-<meta property="article:modified_time" content="2022-07-29T18:07:38.508Z">
+<meta property="og:image" content="https://sherry-pan.github.io/images/databricks_vs_snowflake/1.png">
+<meta property="article:published_time" content="2024-09-08T10:00:00.000Z">
+<meta property="article:modified_time" content="2024-09-08T11:55:23.587Z">
 <meta property="article:author" content="Sherry">
-<meta property="article:tag" content="algorithm">
+<meta property="article:tag" content="data science">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://sherry-pan.github.io/images/grokking_algorithms.PNG">
+<meta name="twitter:image" content="https://sherry-pan.github.io/images/databricks_vs_snowflake/1.png">
 
 
-<link rel="canonical" href="https://sherry-pan.github.io/2022/07/29/Book-Review-Grokking-Algorithm/">
+<link rel="canonical" href="https://sherry-pan.github.io/2024/09/08/Databricks%20VS%20Snowflake/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://sherry-pan.github.io/2022/07/29/Book-Review-Grokking-Algorithm/","path":"2022/07/29/Book-Review-Grokking-Algorithm/","title":"Book Review: Grokking Algorithms"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://sherry-pan.github.io/2024/09/08/Databricks%20VS%20Snowflake/","path":"2024/09/08/Databricks VS Snowflake/","title":"DataBricks VS Snowflake"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Book Review: Grokking Algorithms | Sherry's blog</title>
+<title>DataBricks VS Snowflake | Sherry's blog</title>
   
 
 
@@ -105,7 +105,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -118,6 +118,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#some-concepts"><span class="nav-number">2.</span> <span class="nav-text">Some concepts</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -174,7 +175,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://sherry-pan.github.io/2022/07/29/Book-Review-Grokking-Algorithm/">
+    <link itemprop="mainEntityOfPage" href="https://sherry-pan.github.io/2024/09/08/Databricks%20VS%20Snowflake/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,12 +188,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Book Review: Grokking Algorithms | Sherry's blog">
+      <meta itemprop="name" content="DataBricks VS Snowflake | Sherry's blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Book Review: Grokking Algorithms
+          DataBricks VS Snowflake
         </h1>
 
         <div class="post-meta-container">
@@ -204,7 +205,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-07-29 19:03:46 / Modified: 20:07:38" itemprop="dateCreated datePublished" datetime="2022-07-29T19:03:46+02:00">2022-07-29</time>
+      <time title="Created: 2024-09-08 12:00:00 / Modified: 13:55:23" itemprop="dateCreated datePublished" datetime="2024-09-08T12:00:00+02:00">2024-09-08</time>
     </span>
 
   
@@ -217,41 +218,44 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>昨天看完了《图解算法》一书。算起来，这本书断断续续读了几个月了，不是因为这本书很难理解，恰恰相反，是因为这本书的内容很简单很基础，以至于读了一章之后很久才想起来还有这样一本书的存在，又继续开始读。前一段时间和木木一起断断续续刷leetcode的题，对于基本的数据结构，dfs和bfs有了比较清晰的认识和理解，还了解了动态规划，贪心算法的思想，这些内容占了这本书的一大部分篇幅。对于我这种半路出家的AI学徒来说，理解这本书也不难，可见这本书真的是非常适合新手阅读的基础书。即便如此，我还是能从这本书当中学习到很多非常细节的知识。比如：</p>
-<ol type="1">
-<li>递归只是让解决方法更容易理解，但并没有性能上的提升，而且每次调用递归函数也会耗内存，所以之前和木木刷dfs题目的时候，木木推荐优先使用stack和while循环来解决，而不是首先就用递归。</li>
-<li>解决两点之间最短路径的方法：bfs，仅当边无权重时适用</li>
-<li>狄克斯特拉算法（Dijkstra's Algorithm）的使用条件：
-<ol type="1">
-<li>有向无环图（directed acyclic graph, DAG）</li>
-<li>边的权重为非负</li>
-</ol></li>
-<li>Dijkstra算法的python实现中，需要用到多少个散列表，分别存储哪些信息？</li>
-<li>动态规划和贪心算法的区别：
-<ol type="1">
-<li>贪心算法：每一步都取局部最优，最后期望的出一个全局最优解，但最后的结果并不总是全局最优。</li>
-<li>动态规划：最后的一定是全局最优解</li>
-</ol></li>
-</ol>
-<p>个人感觉是，这本书对于新手来讲还是值得一读的，因为读的过程中会比较有成就感，因为书中的内容基本看一遍都能懂，不需要反复推敲。不过也是因为过于基础和简单，因此不值得反复拿出来翻看。除了要手写dijkstra算法时可能得回顾一下这本书的代码部分，我应该不会翻看这本书了。</p>
-<p>Yesterday, I finnally finished reading a very interesting book
-<strong>Grokking Algorithms</strong>. It is a very basic introduction
-book for beginners to get the basic ideas about algorithms. Since I have
-some basic knowledge about data structures, sorting algorithms, DFS and
-BFS, it is an easy task for me to understand the book. Although it is
-very easy to understand, there are still some take home messages.</p>
-<ol type="1">
-<li>Recursion is much readable but it doesn't improve the
-performance.</li>
-<li>The shortest path between two nodes in unweighted graphs: BSF</li>
-<li>The shortest path between two nodes in directed acyclic graphs:
-Dijkstra's Algorighm</li>
-<li>How to implement Dijkstra's Algorighm in python?</li>
-<li>The difference between Dynamic Programming and Greedy?</li>
-</ol>
+        <h3 id="前言">前言</h3>
+<p>前段时间参加了Databricks公司的In-house
+Day，发现这是一家很厉害的数据平台公司。联想到之前听过的Snowflake，一时很好奇这两个公司的产品之间的区别。<a
+target="_blank" rel="noopener" href="https://bpcs.com/blog/databricks-vs-snowflake">Databricks vs
+Snowflake – 2024 take</a>
+这一篇文章很好地总结了两者之间的区别，在阅读这一篇文章时遇到了一些以前没能弄清楚的概念，产生了一些碎碎念感想，遂写下这篇博客记录之。</p>
+<p>A few weeks ago, I took part in the In-House Day of Databricks and I
+was impressive by their data platform. Their products also reminded me
+of another company Snowflake. I was curious about what they have in
+commons and the distinguished difference between them. I found a very
+useful article from Blueprint Team, <a
+target="_blank" rel="noopener" href="https://bpcs.com/blog/databricks-vs-snowflake">Databricks vs
+Snowflake – 2024 take</a>, explaining the main difference between these
+two companies who are the market dominants in data anaylist, data
+engineering and data science for AI/ML. While going through the article,
+I came across several concepts I wasn’t familiar with, which inspired me
+to write this blog.</p>
+<h3 id="some-concepts">Some concepts</h3>
+<ul>
+<li>Data Warehouse, data storage for structured data and data analysis,
+with high performance and high concurrency.</li>
+<li>Data Lake, a large storage for raw data, not necessary
+structured.</li>
+<li>Data Lakehouse, a combination of data warehouse and data lake,
+supports large amount of data storage, and data analysis as well.</li>
+<li>ETL: Extract, Transform, Load</li>
+<li>Schema-on-write</li>
+<li>Schema-on-read</li>
+</ul>
+<p>This <a
+target="_blank" rel="noopener" href="https://www.elastic.co/cn/blog/schema-on-write-vs-schema-on-read">article</a>
+gives a very good overview of the pros and cons of schema-on-write and
+schema-on-read.</p>
 <figure>
-<img src="/images/grokking_algorithms.PNG" alt="grokking-algorithms" />
-<figcaption aria-hidden="true">grokking-algorithms</figcaption>
+<img src="/images/databricks_vs_snowflake/1.png"
+alt="Databricks VS Snowflake from ChatGPT&#39;s point of view" />
+<figcaption aria-hidden="true">Databricks VS Snowflake from ChatGPT's
+point of view</figcaption>
 </figure>
 
     </div>
@@ -262,21 +266,18 @@ Dijkstra's Algorighm</li>
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+              <a href="/tags/data-science/" rel="tag"># data science</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/07/29/Symbolic-AI/" rel="prev" title="Symbolic AI">
-                  <i class="fa fa-chevron-left"></i> Symbolic AI
+                <a href="/2022/11/20/siks-research-methodology/" rel="prev" title="SIKS Course - Research Methods and Methodologies">
+                  <i class="fa fa-chevron-left"></i> SIKS Course - Research Methods and Methodologies
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/07/29/CS224W-note-tradictional-ML-with-graphs/" rel="next" title="CS224W Note: Tradictional ML with Graphs">
-                  CS224W Note: Tradictional ML with Graphs <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
